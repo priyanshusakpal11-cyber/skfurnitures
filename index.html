@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SK Furniture</title>
+
+    <!-- Mobile Friendly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background: #444;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>SK Furniture 🪑</h1>
+    <p>By Salman Khan</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="products">
+    <h2>Our Products</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200">
+            <h3>Bed</h3>
+            <button onclick="buy()">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200">
+            <h3>Dining Table</h3>
+            <button onclick="buy()">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200">
+            <h3>Chairs</h3>
+            <button onclick="buy()">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200">
+            <h3>Cupboard</h3>
+            <button onclick="buy()">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200">
+            <h3>Modular Kitchen</h3>
+            <button onclick="buy()">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200">
+            <h3>TV Unit</h3>
+            <button onclick="buy()">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200">
+            <h3>Shoe Rack</h3>
+            <button onclick="buy()">Buy Now</button>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: 9876543210</p>
+    <p>Owner: Salman Khan</p>
+</section>
+
+<footer>
+    <p>© 2026 SK Furniture</p>
+</footer>
+
+<script>
+    function buy() {
+        alert("Thank you for your interest! Contact us to order.");
+    }
+</script>
+
+</body>
+</html>
