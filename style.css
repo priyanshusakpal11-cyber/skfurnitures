@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: Arial;
-  background: #f4faff;
+  background: #0a192f; /* dark blue background */
+  color: #e6f1ff;
 }
 
 /* HEADER */
@@ -9,8 +10,8 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: #4da6ff;
-  color: white;
+  background: #112240; /* dark navy */
+  color: #ffffff;
   padding: 12px;
 }
 
@@ -21,10 +22,11 @@ body {
   border-radius: 50%;
 }
 
-/* MENU */
+/* MENU BUTTON */
 .menu-btn {
   font-size: 25px;
   cursor: pointer;
+  color: #64ffda;
 }
 
 /* SIDEBAR */
@@ -34,38 +36,40 @@ body {
   top: 0;
   width: 250px;
   height: 100%;
-  background: #e6f2ff;
-  transition: 0.3s;
+  background: #112240;
   padding-top: 20px;
+  transition: 0.3s;
 }
 
 .sidebar a {
   display: block;
   padding: 12px;
   text-decoration: none;
-  color: #333;
+  color: #ccd6f6;
 }
 
 .sidebar a:hover {
-  background: #cce0ff;
+  background: #233554;
+  color: #64ffda;
 }
 
 /* HERO */
 .hero {
   height: 80vh;
-  background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
+  background: linear-gradient(rgba(10,25,47,0.7), rgba(10,25,47,0.7)),
+              url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
-  color: white;
+  font-size: 32px;
+  text-align: center;
 }
 
 /* GALLERY */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 10px;
+  gap: 15px;
   padding: 20px;
 }
 
@@ -73,6 +77,12 @@ body {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
 
 /* PRODUCTS */
@@ -84,10 +94,15 @@ body {
 }
 
 .card {
-  background: white;
+  background: #112240;
   border-radius: 12px;
   overflow: hidden;
   text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
 }
 
 .card img {
@@ -96,13 +111,25 @@ body {
   object-fit: cover;
 }
 
+.card h3 {
+  padding: 10px;
+  color: #64ffda;
+}
+
 /* BUTTON */
 button {
-  background: #4da6ff;
-  color: white;
+  background: #64ffda;
+  color: #0a192f;
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
+  cursor: pointer;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
+  padding: 30px;
 }
 
 /* WHATSAPP */
@@ -110,7 +137,7 @@ button {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: green;
+  background: #25d366;
   color: white;
   padding: 15px;
   border-radius: 50%;
